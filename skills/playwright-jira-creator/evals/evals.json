@@ -1,0 +1,23 @@
+{
+  "skill_name": "playwright-jira-creator",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "/launch-playwright-jira-creator PROJ-1001",
+      "expected_output": "Reads PROJ-1001, picks an environment that has the bug, verifies the behaviour interactively, writes tests/PROJ-1001.spec.ts asserting the current buggy behaviour, runs it green, cleans up created data, reports.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "try PROJ-1002 next - record it as a playwright bug test like the others",
+      "expected_output": "Notices PROJ-1002 is already fixed in a version every available environment runs (or that no environment has the needed access), and reports the blocker instead of writing a test that passes for the wrong reason.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "/launch-playwright-jira-creator PROJ-99999999",
+      "expected_output": "Reports that the Jira issue cannot be found (HTTP 404) and stops without creating files.",
+      "files": []
+    }
+  ]
+}
