@@ -3,6 +3,7 @@
 [![Claude Code skill](https://img.shields.io/badge/Claude%20Code-skill-D97757)](https://claude.com/claude-code)
 [![Playwright](https://img.shields.io/badge/Playwright-tests-2EAD33?logo=playwright&logoColor=white)](https://playwright.dev)
 [![Jira](https://img.shields.io/badge/Jira-bug%20recorder-0052CC?logo=jira&logoColor=white)](#use)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A [Claude Code](https://claude.com/claude-code) skill that turns a Jira bug into a verified Playwright **bug recorder** test:
 a spec that asserts the bug's *current* behaviour, so it passes while the bug exists and fails once the fix ships.
@@ -50,3 +51,7 @@ or just ask Claude to "record PROJ-12345 as a Playwright bug test".
 | `scripts/explore/step.cjs <step.js>` | Run one small exploration step against that browser |
 | `scripts/run-spec.sh <ID> [env] [args]` | Run one spec against an environment, log to `$TMPDIR` |
 | `scripts/api-cleanup.example.cjs` | Example REST helper for finding/deleting test data |
+
+## License
+
+[MIT](LICENSE)
